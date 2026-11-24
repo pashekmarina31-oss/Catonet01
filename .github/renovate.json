@@ -1,0 +1,17 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    "helpers:pinGitHubActionDigests",
+    ":gitSignOff",
+    "group:allNonMajor",
+    "docker:disable"
+  ],
+  "assignees": ["kkrypt0nn"],
+  "dependencyDashboard": {
+    "enabled": true,
+    "title": "Renovate Dashboard 🤖"
+  },
+  "rebaseWhen": "conflicted",
+  "schedule": ["on friday and saturday"]
+}
